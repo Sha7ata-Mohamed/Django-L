@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About</title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% extends 'base.html' %}
 
-    </head>
-    <body>
-        <h1>About</h1>
-        <p>Check about the <a href="/">Home</a> page </p>
-    </body>
-    <script src="{% static 'scripts/main.js'%}" defer></script>
+{% block title %}
+    About
+{% endblock %}
 
-</html>
+{% block content %}
+    <h1>About</h1>
+    <p>Check about the <a href="/">home</a> page</p>
+{% endblock %}

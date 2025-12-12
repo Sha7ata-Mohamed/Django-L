@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    About
+  About
 {% endblock %}
 
 {% block content %}
-    <h1>About</h1>
-    <p>Check about the <a href="/">home</a> page</p>
+  <h1>About</h1>
+  <p>
+    Check about the <a href="{% url 'home' %}">Home</a> page
+  </p>
 {% endblock %}
